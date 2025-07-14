@@ -1,0 +1,292 @@
+@import url(reset.css);
+@import url(globalStyles.css);
+
+body {
+  font-family: var(--font-primary);
+  color: white;
+  background-color: var(--color-gray2);
+}
+
+.header-container {
+  background-color: var(--color-gray1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-menu button {
+  color: white;
+  font-family: var(--font-secundary);
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu button:hover {
+  color: #8b5cf6; /* roxo claro */
+}
+
+.Bannersection {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.banner-left {
+  max-width: 600px;
+}
+
+.Bannersection h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.purple {
+  color: #8b5cf6;
+}
+
+.Bannersection p {
+  font-family: var(--font-secundary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.banner-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #8b5cf6;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.tech-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.banner-right img {
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.myprojects {
+  padding: 4rem 2rem;
+  background-color: var(--color-gray1);
+}
+
+.myprojects h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #f87171;
+  font-weight: 500;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: var(--color-gray2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #262626;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-header h3 {
+  font-size: 1.2rem;
+}
+
+.new-badge {
+  background-color: #8b5cf6;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.badge {
+  background-color: #3f3f46;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  margin-left: 0.5rem;
+}
+
+.desc {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #d4d4d8;
+}
+
+.project-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: white;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #8b5cf6;
+}
+
+.project-links img {
+  width: 16px;
+}
+
+.sectionlist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.contact-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  color: #d4d4d8;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-list li {
+  background-color: var(--color-gray1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #262626;
+}
+
+.contact-list img {
+  width: 28px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-list h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact-list p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #d4d4d8;
+}
+
+.contact-list a {
+  color: #8b5cf6;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+footer {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: var(--color-gray1);
+}
+
+.footer-section img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section p {
+  color: #d4d4d8;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 28px;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.Bannersection > .banner-left > img {
+  width: 60px;
+  border-radius: 50px;
+}
