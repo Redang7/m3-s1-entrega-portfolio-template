@@ -120,12 +120,14 @@ body {
   font-weight: 500;
 }
 
-.project-grid {
+.project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  padding: 0;
 }
+
 
 .project-card {
   background-color: var(--color-gray2);
